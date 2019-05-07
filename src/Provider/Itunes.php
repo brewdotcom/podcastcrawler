@@ -131,16 +131,18 @@ class Itunes extends AbstractProvider implements ProviderInterface
         $output['result_count'] = $response->resultCount;
 
         foreach($response->results as $value) {
-            $output['podcasts'][] = [
-                'itunes_id' => $value->collectionId,
-                'author'    => $value->artistName,
-                'title'     => $value->collectionName,
-                'episodes'  => $value->trackCount,
-                'image'     => $value->artworkUrl100,
-                'rss'       => $value->feedUrl,
-                'itunes'    => $value->collectionViewUrl,
-                'genre'     => $value->primaryGenreName,
-            ];
+            if (isset($value->feedUrl)) {
+                $output['podcasts'][] = [
+                    'itunes_id' => $value->collectionId,
+                    'author'    => $value->artistName,
+                    'title'     => $value->collectionName,
+                    'episodes'  => $value->trackCount,
+                    'image'     => $value->artworkUrl100,
+                    'rss'       => $value->feedUrl,
+                    'itunes'    => $value->collectionViewUrl,
+                    'genre'     => $value->primaryGenreName,
+                ];
+            }
         }
 
         return $output;
