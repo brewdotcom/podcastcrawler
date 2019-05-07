@@ -10,7 +10,7 @@
 
 namespace BrewDotCom\Provider;
 
-use PodcastCrawler\ProviderInterface;
+use BrewDotCom\ProviderInterface;
 use DateTime;
 use SimpleXMLElement;
 
