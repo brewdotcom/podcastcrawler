@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PodcastCrawler\\": "src/"
+            "BrewDotCom\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PodcastCrawler\\Tests\\": "tests/"
+            "BrewDotCom\\Tests\\": "tests/"
         }
     },
     "prefer-stable": true
