@@ -1,5 +1,5 @@
 {
-    "name": "podcastcrawler/podcastcrawler",
+    "name": "brewdotcom/podcastcrawler",
     "version": "1.1.1",
     "type": "library",
     "description": "PHP library to find podcasts",
