@@ -14,6 +14,12 @@
     "support": {
         "issues": "https://github.com/podcastcrawler/podcastcrawler/issues"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/brewdotcom/podcastcrawler"
+        }
+    ],
     "require": {
         "php": ">=5.4"
     },
